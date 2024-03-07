@@ -25,18 +25,18 @@ print("Your mission is to find the treasure.")
 
 first_choice = input("Where do you go? left or right?\n").lower()
 if first_choice == "left":
-  second_choice = input("You arrived at a seashore. Do you swim or wait?\n").lower()
-  if second_choice == "swim":
-    third_choice = input("You arrived in a castle. Which door do you open, red, blue or yellow?\n").lower()
-    if third_choice == "blue":
-      print("Eaten by beasts. Game over.")
-    elif third_choice == "red":
-      print("Burned by fire. Game over.")
-    elif third_choice == "yellow":
-      print("You found the treasure. You win!")
+    second_choice = input("You arrived at a seashore. Do you swim or wait?\n").lower()
+    if second_choice == "swim":
+        third_choice = input("You arrived in a castle. Which door do you open, red, blue or yellow?\n").lower()
+        if third_choice == "blue":
+            print("Eaten by beasts. Game over.")
+        elif third_choice == "red":
+            print("Burned by fire. Game over.")
+        elif third_choice == "yellow":
+            print("You found the treasure. You win!")
+        else:
+            print("You died of dyslexia. Game over.")
     else:
-      print("You died of dyslexia. Game over.")
-  else:
-    print("You were attacked by a trout. Game over.")
+        print("You were attacked by a trout. Game over.")
 else:
-  print("You fell into a hole. Game over.")
+    print("You fell into a hole. Game over.")
